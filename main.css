@@ -1,19 +1,30 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
-
 .magic {
-  background: #ccc;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  vertical-align: middle;
+    background: #604386;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
 }
-
-.magic img {
-  position: relative;
-  opacity: 0.75;
-  top: 50%;
+.hearts {
+    white-space: nowrap;
+    text-shadow: 4px 0 black, 0 4px black, -4px 0 black, 0 -4px black;
+    opacity: 0.8;
+}
+.one {
+    color: #ad2e2e;
+}
+.two {
+    color: #4bb44b;
+}
+.three {
+    color: #1d1d5d;   
+}
+.four {
+    color: #d8d840;
 }
