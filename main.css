@@ -3,6 +3,7 @@ html {
     margin: 0;
     padding: 0;
     height: 100%;
+    font-family: sans-serif;
 }
 .magic {
     background: #604386;
@@ -13,8 +14,17 @@ html {
 }
 .hearts {
     white-space: nowrap;
-    text-shadow: 4px 0 black, 0 4px black, -4px 0 black, 0 -4px black;
-    opacity: 0.8;
+    text-shadow: 
+        4px 0 black, 
+        0 4px black, 
+        -4px 0 black,
+        0 -4px black,
+        -2px -2px black,
+        -2px 2px black,
+        2px 2px black,
+        2px -2px black;
+    opacity: 0.9;
+    line-height: 1em;
 }
 .one {
     color: #ad2e2e;

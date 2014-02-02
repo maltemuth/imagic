@@ -19,8 +19,13 @@ document.addEventListener('touchmove', function (e) {
     b = Math.round(touch.pageX / $(window).width() * 255);
     a = Math.round(touch.pageY / $(window).height() * 255);
 
-    $('.magic').css("background", "rgb(" + a + ", " + b + ", " + ((510 - a - b) / 2) + ")");
-}, false);
+    $('.magic').css("background", "rgb(" + a + ", " + b + ", " + (256 - (a + b) / 2) + ")");
+
+        $('.magic .hearts .one').css("color", "rgb(" + (255 - (a / 2)) + ", " + b + ", " + (256 - (a + b) / 2) + ")");
+        $('.magic .hearts .two').css("color", "rgb(" + a + ", " + (255 - (b / 2)) + ", " + (256 - (a + b) / 2) + ")");
+        $('.magic .hearts .three').css("color", "rgb(" + (255 - (a / 2)) + ", " + (255 - (b / 2)) + ", " + (256 - (a + b) / 2) + ")");
+        $('.magic .hearts .four').css("color", "rgb(" + (a + b) / 2 + ", " + (128 + (a - b)) / 2 + ", " + (256 - (a + b) / 2) + ")");
+    });
 
 $(window).on("resize", function () {
     w = $(window).width();
